@@ -1,7 +1,7 @@
 # Aliases in this file are bash and zsh compatible
 
 # Don't change. The following determines where YADR is installed.
-yadr=$HOME/.yadr
+yadr=$HOME/.dotfiles
 
 # YADR support
 alias yav='yadr vim-add-plugin'
@@ -38,6 +38,7 @@ if [ $MACVIM_INSTALLED -eq 0 ]; then
   alias vim="mvim -v"
 fi
 
+# use compiled vim with ruby/python support
 alias vim='/usr/local/bin/vim'
 alias vi='vim'
 
@@ -110,7 +111,7 @@ alias less='less -r'
 alias tf='tail -f'
 alias l='less'
 alias lh='ls -alt | head' # see the last modified files
-alias screen='TERM=screen screen'
+alias sc='TERM=screen screen -D -R'
 alias cl='clear'
 alias la='ls -alsh'
 
