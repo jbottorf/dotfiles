@@ -38,6 +38,9 @@ if [ $MACVIM_INSTALLED -eq 0 ]; then
   alias vim="mvim -v"
 fi
 
+alias vim='/usr/local/bin/vim'
+alias vi='vim'
+
 # vimrc editing
 alias ve='vim ~/.vimrc'
 
@@ -109,6 +112,7 @@ alias l='less'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
+alias la='ls -alsh'
 
 # Zippin
 alias gz='tar -zcvf'
