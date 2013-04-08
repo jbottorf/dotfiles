@@ -1,0 +1,39 @@
+escape ``
+bindkey -d -k F1        escape ^O^O # bound to F11
+bindkey -d -k F2        escape `` # bound to F12
+
+startup_message off
+autodetach on
+nethack off
+vbell off
+
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+defscrollback 4096
+deflogin on
+#termcapinfo xterm* ti@:te@
+
+#Default screens
+screen -t     IRC  screen irssi	
+screen -t     TODO
+screen -t     2
+screen -t     3	
+screen -t bucket 4	ssh jd@bucket
+
+select 2
+
+bind j                  focus down
+bind k                  focus up
+bind h                  prev
+bind l                  next
+bind ) select 10
+bind ! select 11
+bind @ select 12
+bind \043 select 13
+bind $ select 14
+bind % select 15
+bind \136 select 16
+bind & select 17
+bind * select 18
+bind ( select 19
