@@ -178,20 +178,22 @@ def install_term_theme
 
   # Ask the user which theme he wants to install
   message = "Which theme would you like to apply to your iTerm2 profile?"
-  color_scheme = ask message, iTerm_available_themes
+  #color_scheme = ask message, iTerm_available_themes
+  color_scheme = 1
   color_scheme_file = File.join('iTerm2', "#{color_scheme}.itermcolors")
 
   # Ask the user on which profile he wants to install the theme
   profiles = iTerm_profile_list
   message = "I've found #{profiles.size} #{profiles.size>1 ? 'profiles': 'profile'} on your iTerm2 configuration, which one would you like to apply the Solarized theme to?"
   profiles << 'All'
-  selected = ask message, profiles
+  #selected = ask message, profiles
+  selected = 1
   
-  if selected == 'All'
+  #if selected == 'All'
     (profiles.size-1).times { |idx| apply_theme_to_iterm_profile_idx idx, color_scheme_file }
-  else
-    apply_theme_to_iterm_profile_idx profiles.index(selected), color_scheme_file
-  end
+  #else
+  #  apply_theme_to_iterm_profile_idx profiles.index(selected), color_scheme_file
+  #end
 end
 
 def iTerm_available_themes
