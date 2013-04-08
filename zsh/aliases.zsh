@@ -111,7 +111,7 @@ alias less='less -r'
 alias tf='tail -f'
 alias l='less'
 alias lh='ls -alt | head' # see the last modified files
-alias sc='TERM=screen -D -R'
+alias sc='screen -D -R'
 alias cl='clear'
 alias la='ls -alsh'
 
