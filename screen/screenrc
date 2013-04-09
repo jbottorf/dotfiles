@@ -16,7 +16,7 @@ deflogin on
 
 #Default screens
 screen -t     IRC  screen irssi	
-screen -t     TODO
+screen -t     NOTES
 screen -t     2
 screen -t     3	
 screen -t bucket 4	ssh jd@bucket
