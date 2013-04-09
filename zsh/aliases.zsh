@@ -39,7 +39,6 @@ if [ $MACVIM_INSTALLED -eq 0 ]; then
 fi
 
 # use compiled vim with ruby/python support
-alias vim='/usr/local/bin/vim'
 alias vi='vim'
 
 # vimrc editing
