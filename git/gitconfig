@@ -120,3 +120,6 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[user]
+	name = JD Bottorf
+	email = jd@sdsc.edu
