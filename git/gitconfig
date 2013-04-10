@@ -67,6 +67,9 @@
   filelog = log -u                  # show changes to a file
   mt = mergetool                    # fire up the merge tool
 
+  # refresh file                    # restore the file to the previous unchanged version
+  rf = checkout -- 
+
   # stash
   ss = stash                        # stash changes
   sl = stash list                   # list stashes
