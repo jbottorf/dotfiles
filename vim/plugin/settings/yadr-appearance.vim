@@ -1,7 +1,7 @@
 " Make it beautiful - colors and fonts
 
 " http://ethanschoonover.com/solarized/vim-colors-solarized
-colorscheme solarized
+colorscheme molokai
 set background=dark
 
 if has("gui_running")
