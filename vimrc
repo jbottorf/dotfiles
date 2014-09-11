@@ -111,3 +111,7 @@ set sidescroll=1
 " ================= Sessions ========================
 map <F2> :mksession! ~/.vim_session <cr> " Quick write session with F2
 map <F3> :source ~/.vim_session <cr>     " And load session with F3
+
+let g:markdown_fold_style = 'nested'
+:set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
+nmap <Space> za
