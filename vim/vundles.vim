@@ -74,5 +74,6 @@ Bundle "tpope/vim-rvm.git"
 Bundle "nelstrom/vim-visual-star-search"
 Bundle "puppetlabs/puppet-syntax-vim"
 Bundle "tomasr/molokai"
+Bundle "elzr/vim-json.git"
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
