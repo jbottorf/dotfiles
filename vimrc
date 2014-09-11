@@ -112,6 +112,25 @@ set sidescroll=1
 map <F2> :mksession! ~/.vim_session <cr> " Quick write session with F2
 map <F3> :source ~/.vim_session <cr>     " And load session with F3
 
+map // :noh<CR>
+nmap <leader>gt :GitGutterToggle<CR>
+
+" colorscheme solarized
+"colorscheme molokai
+"colorscheme industry
+colorscheme macvim
+
+" ShowMarks support, better looking SignColumn
+hi! link SignColumn Special
+hi! link ShowMarksHLl Special
+hi! link ShowMarksHLu Special
+hi! link ShowMarksHLo Special
+hi! link ShowMarksHLm Special
+
+autocmd BufWinLeave ?* mkview
+autocmd BufWinEnter ?* silent loadview
+
+
 let g:markdown_fold_style = 'nested'
 :set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
 nmap <Space> za
